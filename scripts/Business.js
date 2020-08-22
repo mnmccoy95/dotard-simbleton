@@ -20,3 +20,24 @@ export const newYorkBusinesses = (businessObj) => {
         </section>
     `
 }
+
+export const agentList = (businessObj) => {
+    return `
+        <section class="agent">
+            <h2 class="agent-name">
+    
+    
+    
+        </section>
+    `
+}
+
+export const Agent = (agentObj) => {
+    return `
+        <section class="agent">
+            <h2 class="agent-name">${agentObj.fullName}</h2>
+            <div class="agent-company">${agentObj.company}</div>
+            <div class="agent-number">${agentObj.phoneNumber}</div>
+        </section>
+    `
+}
