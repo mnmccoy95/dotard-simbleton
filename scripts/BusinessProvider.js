@@ -125,3 +125,25 @@ const newYorkBusinessesArray = businesses.filter(businessObj => {
 export const newYorkBusiness = () => {
     return newYorkBusinessesArray
 }
+
+// const agentNames = businesses.map(businessObj => {
+//   return businessObj.purchasingAgent
+// })
+
+// const agentNumber = businesses.map(businessObj => {
+//   return businessObj.phoneWork
+// })
+
+// const aagentCompany = businesses.map(businessObj => {
+//   return businessObj.companyName
+// })
+
+const agentData = businesses.map(businessObj => ({
+  "fullName": [businessObj.purchasingAgent.nameFirst, businessObj.purchasingAgent.nameLast].join(" "),
+  "company": businessObj.companyName,
+  "phoneNumber": businessObj.phoneWork
+  }));
+
+export const useAgentData = () => {
+  return agentData
+}
