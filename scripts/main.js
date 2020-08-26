@@ -11,12 +11,13 @@ console.log("all the businesses are", allBusinesses)
 
 BusinessList();
 
-const allNewYorkBusinesses = newYorkBusiness()
-console.log("all the new york businesses are", allNewYorkBusinesses)
+// const allNewYorkBusinesses = newYorkBusiness()
+// console.log("all the new york businesses are", allNewYorkBusinesses)
 
-newYorkBusinessList();
+// newYorkBusinessList();
 
-const allAgents = useAgentData();
-console.log("all the agents are", allAgents)
+// const allAgents = useAgentData();
+// console.log("all the agents are", allAgents)
 
-agentList();
+// agentList();
+
